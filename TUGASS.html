@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Balok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Kalkulator Balok</h2>
+
+    <label for="panjang">Panjang (p):</label>
+    <input type="number" id="panjang" placeholder="Masukkan panjang">
+
+    <br>
+
+    <label for="lebar">Lebar (l):</label>
+    <input type="number" id="lebar" placeholder="Masukkan lebar">
+
+    <br>
+
+    <label for="tinggi">Tinggi (t):</label>
+    <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+
+    <br>
+
+    <button onclick="hitung()">Hitung</button>
+
+    <br>
+
+    <h3>Hasil:</h3>
+
+    <p id="hasilVolume"></p>
+    <p id="hasilLuasPermukaan"></p>
+
+    <script>
+        function hitung() {
+            // Ambil nilai panjang, lebar, dan tinggi dari input
+            var panjang = parseFloat(document.getElementById('panjang').value);
+            var lebar = parseFloat(document.getElementById('lebar').value);
+            var tinggi = parseFloat(document.getElementById('tinggi').value);
+
+            // Hitung volume
+            var volume = panjang * lebar * tinggi;
+            // Hitung luas permukaan
+            var luasPermukaan = 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
+
+            // Tampilkan hasil di HTML
+            document.getElementById('hasilVolume').innerHTML = 'Volume Balok: ' + volume;
+            document.getElementById('hasilLuasPermukaan').innerHTML = 'Luas Permukaan Balok: ' + luasPermukaan;
+        }
+    </script>
+
+</body>
+</html>

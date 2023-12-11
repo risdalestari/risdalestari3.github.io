@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulasi Array</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Mendefinisikan array matakuliah
+        var matakuliah = [
+            "ipa",
+            "ips",
+            "matematika",
+            "sipil",
+            "Informatika",
+            "pwk",
+            "Bahasa Inggris",
+            "Bahasa Indonesia",
+            "biologi",
+            "Pendidikan Kewarganegaraan"
+        ];
+
+        // Menampilkan semua nama matakuliah beserta indeksnya
+        document.write("<h2>Semua Nama Matakuliah dan Indeks</h2>");
+        for (var i = 0; i < matakuliah.length; i++) {
+            document.write("Indeks " + i + ": " + matakuliah[i] + "<br>");
+        }
+
+        // Menghapus elemen pada indeks ke-3 dan ke-7
+        matakuliah.splice(3, 1); // Menghapus elemen pada indeks ke-3
+        matakuliah.splice(7, 1); // Menghapus elemen pada indeks ke-7
+
+        // Menampilkan hasil setelah penghapusan
+        document.write("<h2>Setelah Menghapus Indeks ke-3 dan ke-7</h2>");
+        for (var i = 0; i < matakuliah.length; i++) {
+            document.write("Indeks " + i + ": " + matakuliah[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

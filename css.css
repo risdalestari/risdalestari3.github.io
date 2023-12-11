@@ -1,0 +1,64 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+.container {
+
+    background-color: rgb(127, 170, 255);
+}
+.navbar {
+    background-color: bisque;
+    height: 10vh;
+
+}
+.navbar1{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.navbar2{
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: black;
+    font-size: 30px;
+}
+.navbar2 :hover {
+    background-color: aliceblue;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.3s;
+    border-radius: 8px;
+}
+.a-navber {
+    color:black;
+    text-decoration: none;
+}
+
+.gambar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+.a-gambar {
+    background-color: pink;
+    width: 720px;
+    height: 480px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 80px;
+}
+.footer {
+    height: 10vh;
+    background-color: rgb(red, green, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terimakasih{
+    font-size: 40px;
+}
